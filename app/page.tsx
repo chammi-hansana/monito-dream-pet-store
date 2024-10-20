@@ -4,6 +4,8 @@ import PetCards  from '../components/HomePage/PetCards';
 import Banner1  from '../components/HomePage/Banner1';
 
 import Products  from '../components/HomePage/Products';
+import PetSellers  from '../components/HomePage/PetSellers';
+import Banner2  from '../components/HomePage/Banner2';
 
 
 export default function Home() {
@@ -15,6 +17,9 @@ export default function Home() {
       <Banner1 />
      
       <Products />
+      <PetSellers />
+      <Banner2 />
+
     
     </div>
   );
