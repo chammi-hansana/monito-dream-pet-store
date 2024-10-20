@@ -64,14 +64,13 @@ const Header = () => {
           {/* Currency Selector */}
           <div className="flex pt-[10px] pr-[8px] pb-[8px] pl-[8px] gap-1">
             <div className="flex gap-[6px] w-auto min-w-[60px] h-auto min-h-[23px]">
-             
               <Image
-              src="/images/currency-icon.png"
-              alt="Currency Icon"
-              width={21}
-              height={21}
-            />
-              
+                src="/images/currency-icon.png"
+                alt="Currency Icon"
+                width={21}
+                height={21}
+              />
+
               <p className="font-[500px] text-[16px] leading-6">VND</p>
             </div>
             <Image

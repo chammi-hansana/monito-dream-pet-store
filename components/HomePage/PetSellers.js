@@ -5,11 +5,11 @@ const PetSellers = () => {
     <div className="max-w-7xl mx-auto p-10 flex flex-col gap-4">
       <header className="flex justify-between items-center">
         <div className="flex items-baseline gap-2">
-          <span className="font-medium text-base text-black">Proud to be part of</span>
-          <span className="font-bold text-2xl text-[#003459]">Pet Sellers</span>
+          <div className="w-100 h-[24px] font-[500] text-[16px] leading-6 text-[#000000]">Proud to be part of</div>
+          <div className="w-[367px] h-[36px] font-[700] text-[24px] leading-9 text-[#003459]">Pet Sellers</div>
         </div>
         <button 
-          className="flex items-center gap-2 border border-[#003459] rounded-full py-2 px-4 bg-transparent text-[#003459] font-medium text-sm transition-colors hover:bg-[#003459] hover:text-white"
+          className="flex items-center gap-2 border border-[#003459] rounded-full py-2 px-4 bg-transparent text-[#003459] font-medium text-sm "
           aria-label="View all our sellers"
         >
           View all our sellers

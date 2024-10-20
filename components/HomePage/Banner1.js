@@ -5,14 +5,14 @@ const Banner1 = () => {
     <section
       className="relative flex justify-center items-center mx-auto py-10 lg:py-20"
       style={{
-        width: '1180px',
+        width: '1240px',
         height: '378px',
         top: '40px',
        
         bottom: '50px',
         borderRadius: '20px 20px 20px 20px',
         opacity: '1',
-        backgroundImage: 'url(/images/bg-banner-1.png)', // Adjust the path to your background image
+        backgroundImage: 'url(/images/bg-banner-1.png)', 
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

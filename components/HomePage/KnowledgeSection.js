@@ -24,29 +24,23 @@ const Card = ({ image, title, description }) => {
 const KnowledgeSection = () => {
   return (
     <div className="flex justify-center items-center min-h-screen mt-10">
-      <div className="w-full max-w-[1440px]">
-      <header className="mb-[40px]">
-        <h1 className="font-medium text-[16px] leading-[24px] text-[#000000]">
-          You already know ?
-        </h1>
-        <h2 className="font-bold text-[24px] leading-[36px] text-[#003459]">
-          Useful pet knowledge
-        </h2>
-         {/* View More Button */}
-         <div className="">
-            <button className="flex w-auto min-w-[151px] h-auto min-h-[44px] left-[1159px] rounded-[57px] border-[1.5px] border-[#003459] py-[12px] px-[28px] gap-[8px]">
-              <div className="font-[500] text-[14px] leading-5 text-[#003459]">
-                View more
-              </div>
-              <Image
-                src="/images/rightArrow.png"
-                alt="Right Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
-          </div>
-      </header>
+      <div className="w-full max-w-[1200px]">
+      <div className="flex justify-between items-center w-full mb-10">
+        <div className="text-left">
+          <div className="w-100 h-[24px] font-[500] text-[16px] leading-6 text-[#000000]"> You already know ?</div>
+          <div className="w-[367px] h-[36px] font-[700] text-[24px] leading-9 text-[#003459]"> Useful pet knowledge</div>
+        </div>
+        {/* View More Button */}
+        <button className="flex items-center gap-2 px-6 py-2 rounded-full border border-[#003459]">
+          <span className="font-medium text-[#003459]">View more</span>
+          <Image
+            src="/images/rightArrow.png"
+            alt="Right Arrow"
+            width={20}
+            height={20}
+          />
+        </button>
+      </div>
 
       <div className="flex gap-[20px] justify-between mb-[20px]">
         <Card
