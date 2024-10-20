@@ -63,39 +63,40 @@ const PetCards = () => {
   ];
 
   return (
-    <div className="f w-[1440px] h-[986px] top-[695px] px-[130px]">
-      {/* Section Header */}
-      <div className="flex justify-between mt-16">
-        <div className="w-auto min-w-[367px] h-auto min-h-[63px] gap-[2px]">
-          <div className="w-[91px] h-[24px] font-[500] text-[16px] leading-6 text-[#000000]">
-            What&apos;s new?
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full max-w-[1440px]">
+        {/* Section Header */}
+        <div className="flex justify-between mt-16 px-[130px]">
+          <div className="w-auto min-w-[367px] h-auto min-h-[63px] gap-[2px]">
+            <div className="w-[91px] h-[24px] font-[500] text-[16px] leading-6 text-[#000000]">
+              What&apos;s new?
+            </div>
+            <div className="w-[367px] h-[36px] font-[700] text-[24px] leading-9 text-[#003459]">
+              Take a look at some of our pets
+            </div>
           </div>
-          <div className="w-[367px] h-[36px] font-[700] text-[24px] leading-9 text-[#003459]">
-            Take a look at some of our pets
+          {/* View More Button */}
+          <div className="">
+            <button className="flex w-auto min-w-[151px] h-auto min-h-[44px] left-[1159px] rounded-[57px] border-[1.5px] border-[#003459] py-[12px] px-[28px] gap-[8px]">
+              <div className="font-[500] text-[14px] leading-5 text-[#003459]">
+                View more
+              </div>
+              <Image
+                src="/images/rightArrow.png"
+                alt="Right Arrow"
+                width={20}
+                height={20}
+              />
+            </button>
           </div>
         </div>
-        {/* View More Button */}
-        <div className="">
-        <button className="flex w-auto min-w-[151px] h-auto min-h-[44px] left-[1159px] rounded-[57px] border-[1.5px] border-[#003459] py-[12px] px-[28px] gap-[8px] ">
-          <div className="font-[500] text-[14px] leading-5 text-[#003459]">
-            View more
-          </div>
-          <Image
-            src="/images/rightArrow.png"
-            alt="Right Arrow"
-            width={20}
-            height={20}
-           
-          />
-        </button>
-        </div>
-      </div>
 
-      {/* Pet Cards */}
-      <div className="grid grid-cols-4 gap-[8px] mt-6">
-        {pets.map((pet, index) => (
-          <PetCard key={index} pet={pet} />
-        ))}
+        {/* Pet Cards */}
+        <div className="grid grid-cols-4 gap-[8px] mt-6 px-[130px]">
+          {pets.map((pet, index) => (
+            <PetCard key={index} pet={pet} />
+          ))}
+        </div>
       </div>
     </div>
   );
