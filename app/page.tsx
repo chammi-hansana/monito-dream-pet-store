@@ -3,6 +3,8 @@ import HeroSection  from '../components/HomePage/HeroSection';
 import PetCards  from '../components/HomePage/PetCards';
 import Banner1  from '../components/HomePage/Banner1';
 
+import Products  from '../components/HomePage/Products';
+
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <HeroSection />
       <PetCards />
       <Banner1 />
+     
+      <Products />
     
     </div>
   );

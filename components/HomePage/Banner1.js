@@ -2,52 +2,66 @@ import Image from 'next/image';
 
 const Banner1 = () => {
   return (
-    <div className="relative flex items-center justify-between mx-auto bg-gradient-to-r from-[#003459] to-[#fdfdfd] rounded-[20px] p-5 overflow-hidden font-sans w-[90%] max-w-[1200px] h-auto">
-      {/* Rectangle 1 - Background */}
-      <Image
-        src="/images/rectangle-1.png"
-        alt="Background Shape 1"
-        layout="fill"
-        objectFit="cover"
-        className="absolute top-0 left-0 z-0"
-      />
-      
-      {/* Rectangle 9 - Background */}
-      <Image
-        src="/images/rectangle-9.png"
-        alt="Background Shape 9"
-        width={506}
-        height={360}
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[150px] z-0 opacity-50"
-      />
+    <section
+      className="relative flex justify-center items-center mx-auto py-10 lg:py-20"
+      style={{
+        width: '1180px',
+        height: '378px',
+        top: '40px',
+       
+        bottom: '50px',
+        borderRadius: '20px 20px 20px 20px',
+        opacity: '1',
+        backgroundImage: 'url(/images/bg-banner-1.png)', // Adjust the path to your background image
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      {/* Right Side: Text & Buttons */}
+      <div className="lg:w-1/2 w-full text-center lg:text-right lg:ml-auto ">
+  <h1 className="text-3xl lg:text-5xl font-bold text-[#003057] mb-4 mr-20">
+    One More Friend
+  </h1>
+  <h2 className="text-xl lg:text-3xl font-semibold text-[#003057] mb-6 mr-20">
+    Thousands More Fun!
+  </h2>
+  <p
+    className="text-[#666666] mb-8"
+    style={{
+      fontFamily: 'SVN-Gilroy',
+      fontSize: '12px',
+      fontWeight: 500,
+      lineHeight: '18px',
+      textAlign: 'right',
+      marginLeft:'150px',
+      marginRight:'85px'
+    }}
+  >
+    Having a pet means you have more joy, a new friend, a happy person
+    who will always be with you to have fun. We have 200+ different pets
+    that can meet your needs!
+  </p>
 
-      {/* Girl with Dog Image */}
+  {/* Buttons */}
+  <div className="flex justify-center gap-4 lg:text-left lg:mr-auto ml-20">
+    <button className="bg-transparent border flex items-center border-[#003459] rounded-full py-3 px-6 text-[#003459] font-medium text-base transition-colors">
+      View Intro
       <Image
-        src="/images/horizontal-shot-adult-girl.png"
-        alt="Adult Girl with Dog"
-        width={513}
-        height={342}
-        className="w-1/2 max-w-[513px] z-10 relative"
+        src="/images/play-circle.png"
+        alt="Play Circle"
+        width={24}
+        height={24}
+        className="ml-2"
       />
+    </button>
+    <button className="bg-custom-blue text-white px-6 py-2" style={{ borderRadius: '57px' }}>
+      Explore Now
+    </button>
+  </div>
+</div>
 
-      {/* Text Section */}
-      <div className="text-[#003459] p-5 max-w-[500px] z-10 relative">
-        <h1 className="font-extrabold text-[52px] leading-[68px] mb-2">One More Friend</h1>
-        <h2 className="font-bold text-[36px] leading-[54px] mb-2">Thousands More Fun!</h2>
-        <p className="font-medium text-[12px] leading-[18px] text-[#242b33] mb-5">
-          Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!
-        </p>
-        <div className="flex gap-5">
-          <button className="flex items-center border border-[#003459] rounded-[57px] px-7 py-3 bg-transparent text-[#003459] font-medium text-[16px] cursor-pointer">
-            View Intro
-            <Image src="/assets/media-play-circle.svg" alt="Play" width={24} height={24} className="ml-2" />
-          </button>
-          <button className="px-7 py-3 rounded-[57px] bg-[#003459] text-[#fdfdfd] font-medium text-[16px] cursor-pointer">
-            Explore Now
-          </button>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
