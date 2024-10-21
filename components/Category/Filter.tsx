@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Footer from "../HomePage/Footer";
+
 
 interface Pet {
   name: string;
@@ -10,7 +12,9 @@ interface Pet {
 }
 
 const Filter = () => {
+  
   return (
+    
     <div className="flex flex-col w-screen md:w-full gap-2 h-screen md:sticky md:top-24 ml-40 mt-20">
       <h3 className="text-xl mb-5 font-bold text-pet-primary">Filter</h3>
       <form>
@@ -113,7 +117,7 @@ const PetCard: React.FC<{ pet: Pet }> = ({ pet }) => {
             {/* Gender */}
             <div className="flex w-auto h-auto min-w-[68px] min-h-[18px] gap-[6px]">
               <div className="w-[34px] h-[18px] font-[500] text-[12px] leading-[25px] text-[#667479]">
-                Gender:
+                Gene:
               </div>
               <div className="w-[28px] h-[18px] font-[700] text-[12px] leading-[25px] text-[#667479]">
                 {pet.gender}
@@ -291,7 +295,7 @@ const PetCards = () => {
             </button>
           </div>
         </div>
-
+       
         {/* Pet Cards */}
         <div className="grid grid-cols-3 gap-[8px] mt-6 px-[100px]">
           {pets.map((pet, index) => (
@@ -299,6 +303,8 @@ const PetCards = () => {
           ))}
         </div>
       </div>
+     
+
     </div>
   );
  
@@ -306,15 +312,20 @@ const PetCards = () => {
 
 const PetStore = () => {
   return (
-    <div className="flex flex-row w-screen h-screen">
-      <div className="w-1/4">
-        <Filter />
+    <>
+      <div className="flex flex-row flex-1">
+        <div className="w-1/4">
+          <Filter />
+        </div>
+        <div className="w-3/4 mr-[55px] mb-40">
+          <PetCards />
+        </div>
       </div>
-      <div className="w-3/4 mr-[55px]">
-        <PetCards />
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
+
+ 
 
 export default PetStore;

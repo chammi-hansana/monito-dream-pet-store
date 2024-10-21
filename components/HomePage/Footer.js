@@ -23,25 +23,25 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mb-10">
         <div className="flex flex-wrap justify-center md:justify-start gap-5 md:gap-8">
           <Link
-            href="#home"
+            href="/"
             className="text-[#00171f] font-medium hover:text-[#003459] transition-colors"
           >
             Home
           </Link>
           <Link
-            href="#category"
+            href="/category"
             className="text-[#00171f] font-medium hover:text-[#003459] transition-colors"
           >
             Category
           </Link>
           <Link
-            href="#about"
+            href="/about"
             className="text-[#00171f] font-medium hover:text-[#003459] transition-colors"
           >
             About
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="text-[#00171f] font-medium hover:text-[#003459] transition-colors"
           >
             Contact
