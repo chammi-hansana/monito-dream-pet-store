@@ -32,7 +32,7 @@ const Banner2 = () => {
           <h2 className="font-bold text-[36px] leading-[54px] text-[#003459] capitalize my-[20px]">
             We Need Help. So Do They.
           </h2>
-          <p className="font-medium text-[12px] leading-[18px] text-[#242B33] mb-[20px]">
+          <p className="text-[12px] leading-[18px] text-[#666666] mb-[20px]">
             Adopt a pet and give it a home,
             <br />
             it will love you back unconditionally.
@@ -52,7 +52,6 @@ const Banner2 = () => {
             </button>
           </div>
         </div>
-       
       </div>
     </section>
   );

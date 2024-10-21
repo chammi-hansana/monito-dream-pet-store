@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = () => {
+const CFooter = () => {
   return (
     <div className="bg-gradient-to-r from-[#FCEED5] to-[#FFE7BA] py-20 px-10 md:px-32 font-sans">
       <div className="flex flex-col md:flex-row items-center bg-[#003459] rounded-xl p-8 mb-10">
@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-        <div className="flex flex-wrap justify-center md:justify-start gap-5 md:gap-8">
+      <div className="flex flex-wrap justify-center md:justify-start gap-5 md:gap-8">
           <Link
             href="#home"
             className="text-[#00171f] font-medium hover:text-[#003459] transition-colors"
@@ -95,4 +95,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default CFooter;

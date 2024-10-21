@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Banner1 = () => {
+const Banner = () => {
   return (
     <section
       className="relative flex justify-center items-center mx-auto py-10 lg:py-20"
@@ -12,7 +12,7 @@ const Banner1 = () => {
         bottom: "50px",
         borderRadius: "20px 20px 20px 20px",
         opacity: "1",
-        backgroundImage: "url(/images/bg-banner-1.png)",
+        backgroundImage: "url(/images/category-banner.png)",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -20,14 +20,14 @@ const Banner1 = () => {
     >
       {/* Right Side: Text & Buttons */}
       <div className="lg:w-1/2 w-full text-center lg:text-right lg:ml-auto ">
-        <h1 className="text-3xl lg:text-5xl font-bold text-[#003057] mb-4 mr-20">
+        <h1 className="text-3xl lg:text-5xl font-bold text-[#FDFDFD] mb-4 mr-20">
           One More Friend
         </h1>
-        <h2 className="text-xl lg:text-3xl font-semibold text-[#003057] mb-6 mr-20">
+        <h2 className="text-xl lg:text-3xl font-semibold text-[#FDFDFD] mb-6 mr-20">
           Thousands More Fun!
         </h2>
         <p
-          className="text-[#666666] mb-8"
+          className="text-[#CCD1D2] mb-8"
           style={{
             
             fontSize: "12px",
@@ -45,10 +45,10 @@ const Banner1 = () => {
 
         {/* Buttons */}
         <div className="flex justify-center gap-4 lg:text-left lg:mr-auto ml-20">
-          <button className="bg-transparent border flex items-center border-[#003459] rounded-full py-3 px-6 text-[#003459] font-medium text-base transition-colors">
+          <button className="bg-transparent border flex items-center border-[#FDFDFD] rounded-full py-3 px-6 text-[#FDFDFD] font-medium text-base transition-colors">
             View Intro
             <Image
-              src="/images/play-circle.png"
+              src="/images/vector.png"
               alt="Play Circle"
               width={24}
               height={24}
@@ -56,7 +56,7 @@ const Banner1 = () => {
             />
           </button>
           <button
-            className="bg-custom-blue text-white px-6 py-2"
+            className="bg-[#FDFDFD] text-[#00171F] px-6 py-2"
             style={{ borderRadius: "57px" }}
           >
             Explore Now
@@ -67,4 +67,4 @@ const Banner1 = () => {
   );
 };
 
-export default Banner1;
+export default Banner;

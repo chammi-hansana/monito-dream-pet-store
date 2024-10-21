@@ -1,23 +1,17 @@
 import Image from "next/image";
 import Nav from "../Nav";
-const Header = () => {
+const Navbar = () => {
   return (
-    <header
-      className="flex justify-between items-center shadow-md w-full h-[100px] px-4 lg:px-0 py-4 lg:py-[28px]"
-      style={{
-        background:
-          "linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%)",
-      }}
-    >
+    <header className="flex justify-between items-center shadow-md w-full h-[100px] px-4 lg:px-0 py-4 lg:py-[28px]">
       <div className="relative z-10 flex items-center  ml-0 lg:ml-0 px-0">
         {/* Logo */}
 
         <Image
-          src="/images/monito-logo.png"
-          alt="Monitó Logo"
-          width={315}
-          height={315}
-          className="mt-5 opacity-100"
+          src="/images/monito.png"
+          alt="Monitó"
+          width={115}
+          height={40}
+          className="mt-3 opacity-100 ml-40 mr-20"
         />
 
         {/* Navigation - aligned closely to the logo */}
@@ -73,4 +67,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

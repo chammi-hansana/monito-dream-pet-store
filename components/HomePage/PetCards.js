@@ -52,14 +52,70 @@ const PetCard = ({ pet }) => {
 
 const PetCards = () => {
   const pets = [
-    { name: "MO231 - Pomeranian White", gender: "Male", age: "02 months", price: "6,900,000 VND", imageSrc: "/images/image-1.png", alt: "Dog Image 1" },
-    { name: "MO502 - Poodle Tiny Yellow", gender: "Female", age: "02 months", price: "3,900,000 VND", imageSrc: "/images/image-2.png", alt: "Dog Image 2" },
-    { name: "MO102 - Poodle Tiny Sepia", gender: "Male", age: "02 months", price: "4,000,000 VND", imageSrc: "/images/image-3.png", alt: "Dog Image 3" },
-    { name: "MO512 - Alaskan Malamute Grey", gender: "Male", age: "02 months", price: "8,900,000 VND", imageSrc: "/images/image-4.png", alt: "Dog Image 4" },
-    { name: "MO504 - Pembroke Corgi Tricolor", gender: "Female", age: "02 months", price: "9,000,000 VND", imageSrc: "/images/image-5.png", alt: "Dog Image 5" },
-    { name: "MO237 - Pembroke Corgi Cream", gender: "Male", age: "02 months", price: "7,900,000 VND", imageSrc: "/images/image-6.png", alt: "Dog Image 6" },
-    { name: "MO228 - Pomeranian White", gender: "Male", age: "02 months", price: "6,500,000 VND", imageSrc: "/images/image-7.png", alt: "Dog Image 7" },
-    { name: "MO512 - Poodle Tiny Dairy Cow", gender: "Male", age: "02 months", price: "5.000.000 VND", imageSrc: "/images/image-8.png", alt: "Dog Image 8" },
+    {
+      name: "MO231 - Pomeranian White",
+      gender: "Male",
+      age: "02 months",
+      price: "6,900,000 VND",
+      imageSrc: "/images/image-1.png",
+      alt: "Dog Image 1",
+    },
+    {
+      name: "MO502 - Poodle Tiny Yellow",
+      gender: "Female",
+      age: "02 months",
+      price: "3,900,000 VND",
+      imageSrc: "/images/image-2.png",
+      alt: "Dog Image 2",
+    },
+    {
+      name: "MO102 - Poodle Tiny Sepia",
+      gender: "Male",
+      age: "02 months",
+      price: "4,000,000 VND",
+      imageSrc: "/images/image-3.png",
+      alt: "Dog Image 3",
+    },
+    {
+      name: "MO512 - Alaskan Malamute Grey",
+      gender: "Male",
+      age: "02 months",
+      price: "8,900,000 VND",
+      imageSrc: "/images/image-4.png",
+      alt: "Dog Image 4",
+    },
+    {
+      name: "MO504 - Pembroke Corgi Tricolor",
+      gender: "Female",
+      age: "02 months",
+      price: "9,000,000 VND",
+      imageSrc: "/images/image-5.png",
+      alt: "Dog Image 5",
+    },
+    {
+      name: "MO237 - Pembroke Corgi Cream",
+      gender: "Male",
+      age: "02 months",
+      price: "7,900,000 VND",
+      imageSrc: "/images/image-6.png",
+      alt: "Dog Image 6",
+    },
+    {
+      name: "MO228 - Pomeranian White",
+      gender: "Male",
+      age: "02 months",
+      price: "6,500,000 VND",
+      imageSrc: "/images/image-7.png",
+      alt: "Dog Image 7",
+    },
+    {
+      name: "MO512 - Poodle Tiny Dairy Cow",
+      gender: "Male",
+      age: "02 months",
+      price: "5.000.000 VND",
+      imageSrc: "/images/image-8.png",
+      alt: "Dog Image 8",
+    },
   ];
 
   return (
